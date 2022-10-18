@@ -1,0 +1,523 @@
+:root{
+    --color-primary: #173F35;
+    --color-secundary: #FF6720;
+    --color-primary-light: #ADCAB8;
+    --color-secundary-light: #FBD872;
+    --h2: 37px;
+    --h3: 18px;
+    --p: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************
+    HOME - HEADER
+**********************/
+
+.home{
+    height: calc(100vh + 5em);
+    background: url(../images/banner-web.png);
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.home .header{
+    position: absolute;
+    display: flex;
+    background: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+
+}
+
+.home .container-header{
+    justify-content: space-between;
+}
+
+.home .logo{
+    width: 213px;
+}
+
+.home .navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .navigation .main-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.home .navigation .lang-menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.home .navigation .main-menu a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 12px;
+    padding: 20px;
+    transition: 200ms;
+}
+
+.home .navigation .main-menu a:hover{
+    color: var(--color-secundary-light);
+}
+
+.home .navigation .lang-menu a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home .navigation .lang-menu .en a{
+    color: var(--color-secundary);
+}
+
+.home .navigation .lang-menu a{
+    transition: 200ms;
+}
+
+.home .navigation .lang-menu a:hover{
+    color: var(--color-secundary-light);
+}
+
+
+.home .navigation .lang-menu .en::after{
+    content: "|";
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+
+
+/*********************
+    HOME - BANNER
+**********************/
+
+.banner{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+
+.banner .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner .title h1{
+    background: var(--color-primary);
+    display: block;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.banner .title h1 span{
+    font-size: var(--h2);
+    font-weight: 400;
+}
+
+.banner .title button{
+    display: block;
+    background: var(--color-secundary-light);
+    width: 180px;
+    padding: 16px 0;
+    margin-top: 10px;
+    border-radius: 100px;
+    border: 0;
+    transition: 200ms;
+}
+
+.banner .title button:hover{
+    background: #ffe8a4;
+    transform: scale(1.05,1.05);
+}
+
+.banner .title button a{
+    padding: 16px 40px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.banner .img-banner{
+    height: calc(90vh - 5em);
+}
+
+
+
+
+
+
+
+
+
+
+/*********************
+    ABOUT-BULLET
+**********************/
+.about .bullet{
+    display: flex;
+}
+
+.about .bullet div{
+    background: white;
+    text-align: center;
+    margin: -4em auto 0 auto;
+    border: 5px solid var(--color-secundary);
+    border-radius: 20px;
+    box-shadow: 0 3px 5px #00000044;
+    justify-content: center;
+    padding: 10px;
+    transition: 200ms;
+}
+
+.about .bullet div:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 10px 10px 15px #00000033;
+}
+
+.about .bullet .one-to-one{
+    margin: 35px 0 10px 0;
+    background: white;
+}
+
+.about .bullet .efective{
+    margin: 10px 0;
+    background: white;
+}
+
+.about .bullet .captivating{
+    margin: 17px 0 10px 0;
+}
+
+
+.about .bullet h3{
+    font-size: var(--h3);
+    text-transform: uppercase;
+    color: var(--color-secundary);
+}
+
+.about .bullet p{
+    font-size: var(--p);
+    width: 200px;
+    margin: 10px 20px 20px 20px;
+    line-height: 24px
+}
+
+
+
+/*********************
+    ABOUT-ABOUT-US
+**********************/
+
+.about .about-us{
+    margin-top: 80px;
+    display: flex;
+}
+
+.about .about-us .content{
+    width: 35%;
+}
+
+.about .about-us .content h2{
+    font-size: var(--h2);
+    font-weight: bold;
+    color: var(--color-secundary);
+    text-transform: uppercase;
+}
+
+.about .about-us .content p{
+    margin: 20px 50px 20px 0px;
+    text-align: left;
+}
+
+.about .about-us .team{
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+}
+
+.about .about-us .team div{
+    margin: 30px;
+    text-align: center;
+}
+
+.about .about-us .team h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-primary);
+    text-transform: uppercase;
+    width: 278px;
+    height: 86px;
+    color: white;
+    border-radius: 50px;
+}
+
+#Elissandro h4{
+    margin-top: -5px;
+}
+
+#Dayenne h4{
+    margin-top: -5px;
+}
+#Dayenne img{
+    margin-right: 25px;
+}
+
+.about .about-us .team span{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+    margin-top: 5px;
+}
+
+#Elissandro{
+    margin-top: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************
+    SERVICES
+**********************/
+.services{
+    background: var(--color-secundary);
+    padding: 100px;
+
+}
+
+.services h2{
+    color: var(--color-primary);
+    font-size: var(--h2);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services .services-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .services-list li{
+    margin: 0 50px;
+    text-align: center;
+    list-style: none;
+    width: 250px;
+}
+
+.services .services-list li img{
+    height: 80px;
+}
+
+.services .services-list-2{
+    padding-top: 80px;
+}
+
+.services .services-list li h3{
+    color: var(--color-primary);
+    font-size: var(--h3);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+.services .services-list li p{
+    color: white;
+    font-size: var(--p);
+}
+
+
+
+
+
+
+
+
+
+/*********************
+    GALLERY
+**********************/
+
+.gallery{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery ul{
+    display: flex;
+    height: 50%;
+}
+
+.gallery ul li{
+    list-style: none;
+    transition: 200ms;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************
+    CLIENTS
+**********************/
+
+.clients{
+    background: var(--color-primary);
+    padding: 100px 0;
+    text-align: center;
+}
+.clients h2{
+    font-size: var(--h2);
+    color: var(--color-secundary);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.clients ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients ul li{
+    margin: 0 30px;
+    width: 200px;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+/*********************
+    CONTACT - INFO
+**********************/
+.contact{
+    margin: 100px auto;
+}
+
+.contact .info{
+    width: 50%;
+}
+
+.contact .info h2{
+    font-size: var(--h2);
+    color: var(--color-secundary);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.contact .info li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact .info li a{
+    font-size: 16px;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+/*********************
+    CONTACT - INFO
+**********************/
+
+.contact form{
+    justify-self: flex-end;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact form input,
+.contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: var(--p);
+    background: #c0c0c0;
+    border: 0;
+    border-radius: 50px;
+}
+
+.contact form .button{
+    background: var(--color-primary);
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.contact form .button:hover{
+    background: var(--color-secundary-light);
+    transform: scale(1.01,1.01);
+}
+
