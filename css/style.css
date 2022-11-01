@@ -72,6 +72,7 @@ body p{
 
 .home .logo-mobile{
     display: none;
+    visibility: hidden;
 }
 
 .home .navigation{
